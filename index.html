@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteador de números</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_conteudo">
+            <div class="container_info">
+                <div class="container_txt">
+                    <h1>Sorteador<span class="container_color_txt"> de números</span></h1>
+
+                    <div class="container_field">
+                        <label class="text_paragraph" for="quantidade">Quantidade de números</label>
+                        <input class="container_input" id="quantidade" type="number" min="1">
+                    </div>
+
+                    <div class="container_field">
+                        <label class="text_paragraph" for="min">Do número</label>
+                        <input class="container_input" id="min" type="number" min="1">
+                    </div>
+
+                    <div class="container_field">
+                        <label class="text_paragraph" for="max">Até o número</label>
+                        <input class="container_input" id="max" type="number" min="1">
+                    </div>
+                </div>
+
+                <div class="container_botoes">
+                    <button onclick="sortear()" id="btn_sortear" class="container_btn">Sortear</button>
+                    <button onclick="reiniciar()" id="btn_reiniciar" class="container_btn_OFF">Reiniciar</button>
+                </div>
+
+                <div class="container_txt" id="resultado">
+                    <label class="text_paragraph">Números sorteados: nenhum até agora :[</label>
+                </div>
+
+                <div class="container_field" style="margin-top: 40px;">
+                    <label class="text_paragraph">
+                        <input type="checkbox" id="permitirRepetidos">
+                        Permitir números repetidos
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+    
+</body>
+
+</html>
